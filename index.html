@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css">
+    <title>My Blog</title>
+</head>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop()<500) {
+      $("#about").addClass("color");
+    } else {
+      $("#about").removeClass("color");
+    }
+  });
+});
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop()>500){
+      $("#blog").addClass("color");
+    }else{
+      $("#blog").removeClass("color");
+    }
+  });
+});
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop()>1500) {
+      $("#blog").removeClass("color"); 
+      $("#education").addClass("color");
+    } else {
+      $("#education").removeClass("color");
+    }
+  });
+});
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop()>2500) {
+    $("#education").removeClass("color");
+      $("#contact").addClass("color");
+    } else {
+      $("#contact").removeClass("color");
+    }
+  });
+});
+    function Out(){
+        alert('Wish you have a good experience!')
+    }
+    var imgs =["img/wedding.jpg","img/bn5.jpg","img/bn4.jpg","img/bn6.jpg","img/bn1.jpg","img/bn2.jpg","img/bn3.jpg"];
+    var i=0;
+   function next() {
+       var slider = document.getElementById("slider");
+       i++;
+       if(i== imgs.length) i=0;
+       slider.src= imgs[i];
+    }
+    function pre(){
+       var slider = document.getElementById("slider");
+       i--;
+       if(i<0) i=imgs.length-1;
+       slider.src= imgs[i];
+    }
+    function Change() {
+        var a =document.getElementById("innnerContent");
+        var b =document.getElementById("footer");
+        var c =document.getElementById("change");
+        var d =document.getElementById("trai");
+        var e =document.getElementById("center");
+        var f =document.getElementById("phai");
+        var g =document.getElementById("muiten");
+        var k =document.getElementById("muiten2");
+        var h =document.getElementById("change2");
+        var i =document.getElementById("MXH");
+        var j =document.getElementById("menuTop");
+        a.style.backgroundColor= "#1C1C1C";
+        a.style.color= "white";
+        b.style.backgroundColor= "gray";
+        c.style.backgroundColor= "#F8F8FF";
+        d.style.color="white";
+        e.style.color="white";
+        f.style.color="white";
+        g.src ='img/mui ten2.jpg';
+        k.src ='img/mui ten2.jpg';
+        h.style.backgroundColor= "lightcoral";
+        i.src ='img/MXH2.jpg';
+    }
+    function Change2() {
+        var a =document.getElementById("innnerContent");
+        var b =document.getElementById("footer");
+        var c =document.getElementById("change2");
+        var d =document.getElementById("trai");
+        var e =document.getElementById("center");
+        var f =document.getElementById("phai");
+        var g =document.getElementById("muiten");
+        var k =document.getElementById("muiten2");
+        var h =document.getElementById("change");
+        var i =document.getElementById("MXH");
+        a.style.backgroundColor= "white";
+        a.style.color= "black";
+        b.style.backgroundColor= "white";
+        c.style.backgroundColor= "#F8F8FF";
+        d.style.color="black";
+        e.style.color="black";
+        f.style.color="black";
+        h.style.backgroundColor= "lightcoral";
+        g.src ='img/mui ten.jpg';
+        k.src ='img/mui ten.jpg';
+        i.src ='img/MXH.png';
+    }
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 200) {
+            $('.on_top').fadeIn();
+        } else {
+            $('.on_top').fadeOut();
+        }
+    });
+    $('#on_top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 2000);
+        return false;
+    });
+});
+</script>
+<body> 
+  <div id="wrapper">
+    <div id="menuTop">
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="true" 
+        data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100009457556078"><img id="logo" src="img/icon.jpg">
+        </a></blockquote></div>
+          <button id="change" onclick="Change()">On</button>
+          <button id="change2" onclick="Change2()">Off</button>
+                <ul>
+                    <li><a id="about" href="Index.html">About</a></li>
+                    <li><a id="blog" href="">MyBlog</a></li>
+                    <li><a id="education" href="">Education</a></li>
+                    <li><a id="contact">Contact</a></li>
+                </ul>
+        </div>      
+<div id="banner">
+    <div id="innerBanner">
+        <img id="slider" src="img/wedding.jpg">
+        <div id="but1"><img src="img/pre.png" onclick="pre()"></div>
+        <div id="but2"><img src="img/next.png" onclick="next()"></div>
+    </div>  
+</div>
+<div id="content">
+    <div id="innnerContent">
+    <img id="avatar" src="img/tangduonggiadat.jpg">
+    <p>Developer/Designer</p>
+    <div id="intro">
+    <h1 style="font-size: 50px">Tang Duong<br>Gia Dat</h1>
+    <h3>Hello! I am a freshman at <strong>FPT Polytechnic</strong> and my major is IT.<br>
+        My skills are currently incompletely yet.<br> 
+        However,I will try my best to become a professional developer and designer.
+        </h3>
+    </div>
+    <button id="about">About me</button>
+    <img style="width: 80px;height:50px;margin:80px 10px" src="img/mui ten.jpg" id="muiten">
+    <button id="blog">MyBlog</button>
+    <img style="width: 80px;height:50px;margin:80px 110px" src="img/mui ten.jpg" id="muiten2">
+    <button id="education">Education</button>
+    <hr>
+    <h1 id="tieude">FEATURED POST</h1><br><br>
+    <div id="myblog">
+        <img src="img/post1.jpg">
+        <p>[Sài Gòn ngày 02/04/2020] - Hồi đầu tui cũng ghét Sài Gòn lắm!<br><br>
+            Sài Gòn của tui ấy mà,<br>
+            Thành phố gì mà khói bụi, dân tình thì hối hả, đôi lúc còn cục cằn. Nhiều cái làm tui bực mình lắm. Nhưng mà ở lâu rồi cũng thấy Sài Gòn thật dễ thương.
+            Thương anh bơm xăng lỡ tay bơm thêm mà cũng không lấy tiền dư, bà cụ bán vé số mắt đẫm nước vì nỗi sầu của cuộc đời cơ cực, thương ông chú bán đậu ở quán
+            chị Hai, thương đứa em nhỏ ăn xin chỉ biết đứng ngoài 1 cửa hiệu gà rán nhìn vào và thèm thuồng.
+            Ở Sài Gòn, đi nhiều nơi mới thấy được nhiều điều đẹp đẽ của Sài Gòn như thế.
+            -Vẫn còn nhớ cái ngày đầu lên Sài Gòn đầy lo sợ và ngờ nghệch, vấp ngã rồi nhận được bao
+            nhiêu bài học thấm thía, dần già đây lại thành mảnh quê hương thứ hai mà xa là nhớ không chịu được.
+            Đúng là thành phố cho người ta ghét thì có ghét, nhưng thương thì vẫn thương hết lòng. Nếu có một ngày
+            ai hỏi tui:” Có định rời Sài Gòn không?” Tui có lẽ sẽ chẳng nỡ rời đi nữa.</p>
+    </div>
+    <div id="myblog">
+        <img src="img/post2.jpg">
+        <p>[Sài Gòn ngày 8/04/2020]<br>
+            #chuyenhomnay<br><br>
+            "Khi chúng ta còn trẻ, chúng ta theo đuổi niềm đam mê. Sau khi chúng ta trưởng thành, chúng ta lại mê đắm những thứ tầm thường. Khi chúng ta kiếm tìm qua, 
+            tổn thương qua, rời bỏ… chúng ta vẫn có thể trước sau như một tin tưởng vào tình yêu. Đây là một loại dũng khí.
+            Bởi vì mỗi một người đều có một khu rừng thuộc về bản thân. Lạc mất phương hướng cũng đã lạc mất phương hướng, những người định sẵn sẽ tương phùng rồi cũng sẽ tương phùng."<br><br>
+            [Sài Gòn gần 9 triệu người, facebook có cỡ 2000 friends, danh bạ cũng khoảng trăm mấy, nhưng đôi lúc người ta không biết gọi cho ai, nhắn cho người nào.]
+            </p>
+    </div>
+    <div id="myblog">
+        <img src="img/post3.jpg">
+        <p>[Sài Gòn ngày 13/04/2020]<br><br>
+            - CHÚNG TA CỦA SAU NÀY<br>
+            Chúng ta của sau này, biết đâu không còn ở Sài Gòn nữa.
+            Chúng ta của sau này, cái gì cũng có, chỉ là thiếu mất thời gian, ngồi với nhau, uống một ly cà phê ôn lại chuyện cũ.
+            Chúng ta của sau này, chuyện gì cũng có thể làm, duy chỉ có chuyện quay trở về ngày xưa là không được nữa.
+            Chúng ta của sau này, người nào cũng gặp, nhưng đôi khi lại vội quên những người bên cạnh mình.
+            Chúng ta của sau này, có thể đã trưởng thành hơn, giàu có hơn, chinh phục được nhiều đỉnh cao hơn, nhưng chắc gì chúng ta đã còn bên cạnh nhau?<br>
+            Thực ra, mọi chuyện trên đời đều có giá của nó, vấn đề là bạn chọn gì và bỏ lại gì thôi, đúng không?<br><br>
+             #chuyencuaDatvaSaiGon
+            </p>
+    </div>
+    <hr>
+    <h1 id="tieude">EDUCATION</h1><br><br>
+    <center>
+    <div id="edu">
+        2018 / Dec<br><br>
+
+        <span> Van Tiep Highschool</span><br>
+        I study at there in 3 years.In there I learn primary knowledges to as a basis for future development.<br><br>
+        
+        2019 / Sep<br><br>
+        
+        <span>FPT Polytechnic</span><br>
+        In there I'm beginner at IT major.I learn a skill as C/HTML/CSS,Photoshop and basic English as to presentation skills<br><br>
+        
+        2020 / Apr<br><br>
+        
+        <span>FPT Polytechnic</span><br>
+        I continued to learn Java/Javacript and self learning AI/Lightroom/Photography <br><br>
+        
+        In future..<br><br>
+
+        I am going to learn programing languages and have graphic skills,...<br>
+        </div>
+    </center>
+    <h2>Please!contact to me if you want to have unique designs</h2>
+    <a class="on_top" href="#top" style="display: none;">
+      <img id="cuon" src="img/cuon.png" alt="">
+    </a>
+</div>
+</div>
+<hr>
+<h1 id="tieude">CONTACT</h1><br><br>
+<div id="form">
+    <center>
+       <h2>HOW CAN I HELP YOU?</h2>
+        <p>
+                I always looking to make partnerships with great companies.Whether you'd like to<br>
+                start a project,learn more about what I can do for you,or just talk life over the best cup<br>
+                of coffee in town,I am happy to oblige.
+         </p>
+    </center>
+       <form enctype="application/x-www-form-urlencoded">
+        <div id="name" >
+            <h5>Your name:</h5>
+            <input type="text" name="ten" autofocus required aria-autocomplete="both">
+        </div>
+        <div id="phone">
+            <h5>Phone</h5>
+            <input  type="tel" name="phone" autofocus required>
+        </div>
+        <div  id="email">
+            <h5>Email Address</h5>
+            <input type="email" name="email" autofocus required>
+        </div>
+        <div id="city">
+            <h5>City</h5>
+        <input  type="text" name="city" autofocus required>
+        </div>
+        <input id="submit" value="SET FORTH" type="submit" formtarget="_blank">
+       </form>
+ </div>
+<hr>
+<div id="footer">
+    <span id="trai">500 Terry Francois Street<br>
+            San Francisco, CA 94158</span>
+    <span id="center">Tel: 123-456-7890<br>
+           Email: info@mysite.com</span>
+    <span id="phai">© 2023 by Belle Weddings.<br> 
+            Proudly created with Wix.com</span>
+    <a href="https://www.instagram.com/tangduong_giadat/"><img id="MXH"  src="img/MXH.png"></a>
+</div>
+</div>
+</body>
+</html>

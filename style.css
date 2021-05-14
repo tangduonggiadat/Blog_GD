@@ -1,0 +1,358 @@
+
+#wrapper{
+  width: 1200px; 
+  margin: 0px auto;
+  height: 100%;
+}
+#menuTop{
+    background-color: white;
+    height: 100px;
+    width: 2000px;
+    margin: 0 0 0 -350px;
+    position: fixed;
+    top: 0px;
+    z-index: 100000;
+    box-shadow: 1px 5px 10px gray;
+    color: black;
+}
+#banner{
+  position: relative;
+    height: 505px;
+    width: 1200px;
+    padding-top: 100px;
+}
+#innerBanner>img{
+  width: 1200px;
+  height: 510px;
+}
+#content #innnerContent{
+     position: relative;
+     width: 1200px;
+     height: 2650px;
+     background-color: #ffffff;
+} 
+#content #innnerContent #avatar{
+  width: 400px;
+  height: 400px;
+  clear: both;
+  border-radius: 300px;
+  margin: 100px;
+}
+#content #innnerContent #about{
+  text-decoration: none;
+  border: unset;
+  display: block;
+  float: left;
+  text-align: center;
+  color: white;
+  margin: 50px -400px 0 500px;
+  background-color: #006633;
+  border-color: orangered;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+#content #innnerContent #blog{
+  text-decoration: none;
+  border: unset;
+  display: block;
+  float: left;
+  color: white;
+  margin: 50px -400px 0 500px;
+  background-color: #FF3366;
+  border-color: greenyellow;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+#content #innnerContent #education{
+  text-decoration: none;
+  border: unset;
+  display: block;
+  float: left;
+  color: white;
+  margin: 50px -400px 0 500px;
+  background-color: #CC3399;
+  border-color: gold;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+#content #innnerContent #intro{
+     margin: -450px 0 0 520px;
+}
+#content #innnerContent >h2{
+  position: absolute;
+  top: 530px;
+  left: 450px;
+  color: tomato;
+  text-shadow: 0 0 10px red;
+}
+strong{
+  color: orange;
+  font-size: 30px;
+}
+#change{
+  float: right;
+  position: absolute;
+  top: 2px;
+  right: 136px;
+  background-color: lightcoral;
+}
+#change:hover::before{
+content: "Đêm";
+position: absolute;
+bottom: -10px;
+right: -5px;
+top: 20px;
+border-top: 1px solid orange;
+border-right: 10px solid transparent;
+border-left: 10px solid transparent;
+}
+#change2{
+  float: right;
+  position: absolute;
+  top: 2px;
+  right: 103px; 
+  background-color: lightcoral;
+}
+#change2:hover::before{
+  content: "Ngày";
+  position: absolute;
+  bottom: -10px;
+  left: -7px;
+  top: 20px;
+  border-top: 1px solid orange;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  }
+#content #innnerContent #welcome{
+    width: 200px;
+    height: 80px;
+    border: transparent;
+    font-size: large;
+    color: black;
+    background-color: wheat;
+    border-color: white;
+    margin: 50px 0 0 500px;
+  }
+#content #innnerContent #welcome:hover{
+  color: tomato;
+}
+#menuTop ul{
+position: absolute;
+padding: 0px;
+top: -10px;
+left: 780px;
+text-shadow: 0 0 5px wheat;
+}
+#menuTop ul li{
+    float: left;
+    list-style: none;
+}
+#menuTop ul li a{
+    text-decoration: none;
+    display: block;
+    line-height: 100px;
+    padding: 0px 20px 0px 20px;
+    color: black;
+}
+#content #innnerContent>p{
+   clear: both;
+   color: #990000;
+   font-size: x-large;
+   margin: -90px 0 0 220px;
+   text-shadow:0 0 3px tomato;
+   background-color: GhostWhite;
+   width: 195px;
+   border-radius: 10px;
+ }
+ #menuTop ul li>a:hover{
+     color: wheat;
+ }
+ #menuTop #logo{
+   position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 15px;
+ }
+ #lock{
+   float: right;
+   position: absolute;
+   right: 50px;
+ }
+ #myblog{
+   position: relative;
+   border: 2px solid darkslategrey;
+   margin-bottom: 100px;
+ }
+ #myblog img{
+   clear: both;
+  width: 400px;
+  height: 220px;
+  margin-bottom: -4px;
+  object-fit: cover;
+}
+#myblog p{
+  position: absolute;
+  float: left;
+  left: 430px;
+  top: 0px;
+}
+#edu{
+  border: 5px solid #ffeae0;
+  width: 30%;
+  padding: 100px;
+  font-size: large;
+}
+#edu span{
+  color: #FF3366;
+  font-size: x-large;
+  font-weight: bold;
+}
+ #footer{
+   position: relative;
+  width: 1200px;
+  height: 100px;
+  text-align: center;
+}
+ #footer>span{
+  clear: both;
+  padding: 10px;
+  float: left;
+  list-style: none;
+  display: block;
+  line-height: 30px;
+  color: black;
+  border-right: 0.2px solid tomato;
+}
+
+  #footer>#trai{
+      clear: both;
+      margin: 15px 0 0 50px;
+}
+  #footer>#center{
+      clear: both;
+      margin: -80px 0 0 300px;
+}
+  #footer>#phai{
+      clear: both;
+      margin: -80px 0 0 550px;
+  }
+ 
+  #footer #MXH{
+      width: 300px;
+      height: 100px;
+      margin: -1 0 0 900px;
+  }
+#tieude{
+    color: black;
+    background-color: bisque;
+    width: 25%;
+    text-align: center;
+  }
+#but1{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    left: -22px;
+    top:310px;
+    cursor: pointer;
+}
+#but1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#but2{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    right: -27px;
+    top:310px;
+    cursor: pointer;
+}
+#but2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#menuTop .color{
+color: coral;
+text-shadow: 1px 1px 10px crimson;
+font-family: serif;
+}
+a.on_top {
+opacity:0.6; 
+border-radius: 6px;
+background-color: white;
+padding: 10px 20px;
+position: fixed;
+bottom: 70px;
+right: 20px;
+height: 40px;
+display: block;
+}
+form{
+  padding-bottom: 100px;
+   text-align: center;
+  align-content: center;
+}
+form> h5{
+font-size: medium;
+font-style: italic;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#submit{
+  color: white;
+  width: 90px;
+  height: 30px;
+  background-color: black;
+  margin-top: 40px;
+  font-size: 10px;
+  border: none;
+
+}
+#cuon{
+width: 100px;
+height: 100px;
+}
+@media screen and (max-width: 1024px) {
+        .wrapper {
+            max-width: 100%;
+           background: #e7e7e7;
+           margin: auto;
+        }
+     }
+@media screen and (max-width: 480px) {
+      .wrapper {
+          max-width: 25%;
+         background: #e7e7e7;
+         margin: auto;
+      }
+      #innerBanner>img{
+        display: none;
+       }
+       #menuTop{
+        height: 80px;
+        width: 1000px;
+    }
+    #banner{
+        height: 255px;
+        width: 600px;
+    }
+
+   }
+
+@media screen and (max-width: 320px) {
+        .wrapper{
+            max-width: 50%;
+           background: #e7e7e7;
+           margin: auto;
+        }
+        #innerBanner>img{
+          display: none;
+         }
+        
+     }
